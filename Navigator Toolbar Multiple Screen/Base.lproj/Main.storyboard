@@ -26,7 +26,11 @@
                                 <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                                 <color key="backgroundColor" red="0.14034740793525685" green="0.87160222385074937" blue="0.97937580960000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
-                                    <barButtonItem image="ic_autorenew.png" id="Z6s-Rt-SmA"/>
+                                    <barButtonItem image="ic_autorenew.png" id="Z6s-Rt-SmA">
+                                        <connections>
+                                            <action selector="resetNumber:" destination="BYZ-38-t0r" id="Gyi-hA-Ecj"/>
+                                        </connections>
+                                    </barButtonItem>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="wC6-sa-2ix"/>
                                     <barButtonItem systemItem="reply" id="KrF-Qp-cHk"/>
                                     <barButtonItem style="plain" systemItem="flexibleSpace" id="mSb-El-Hma"/>
@@ -39,8 +43,16 @@
                                 <color key="backgroundColor" red="0.16083603900734861" green="0.91292821800541568" blue="0.97937580960000004" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
                                 <items>
                                     <navigationItem title="First Screen" id="rmg-pj-PFz">
-                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="yA1-Qq-Q5b"/>
-                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="OUd-PX-ZQQ"/>
+                                        <barButtonItem key="leftBarButtonItem" systemItem="rewind" id="yA1-Qq-Q5b">
+                                            <connections>
+                                                <action selector="decreseNumber:" destination="BYZ-38-t0r" id="Nfk-dH-0ZD"/>
+                                            </connections>
+                                        </barButtonItem>
+                                        <barButtonItem key="rightBarButtonItem" systemItem="fastForward" id="OUd-PX-ZQQ">
+                                            <connections>
+                                                <action selector="increaseNumber:" destination="BYZ-38-t0r" id="dGK-Lm-Mfz"/>
+                                            </connections>
+                                        </barButtonItem>
                                     </navigationItem>
                                 </items>
                             </navigationBar>
@@ -54,6 +66,9 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                     </view>
+                    <connections>
+                        <outlet property="nuberLabel" destination="lPn-Fu-z0T" id="iVR-Ac-Tln"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
