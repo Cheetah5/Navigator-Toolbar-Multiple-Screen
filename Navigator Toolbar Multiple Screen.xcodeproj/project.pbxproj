@@ -15,6 +15,7 @@
 		F2FA3E251EF1205E0074AB91 /* ic_autorenew_2x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2FA3E221EF1205E0074AB91 /* ic_autorenew_2x.png */; };
 		F2FA3E261EF1205E0074AB91 /* ic_autorenew_3x.png in Resources */ = {isa = PBXBuildFile; fileRef = F2FA3E231EF1205E0074AB91 /* ic_autorenew_3x.png */; };
 		F2FA3E271EF1205E0074AB91 /* ic_autorenew.png in Resources */ = {isa = PBXBuildFile; fileRef = F2FA3E241EF1205E0074AB91 /* ic_autorenew.png */; };
+		F2FA3E291EF139150074AB91 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F2FA3E281EF139150074AB91 /* SecondViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		F2FA3E221EF1205E0074AB91 /* ic_autorenew_2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew_2x.png; path = ../../../../Desktop/ic_autorenew_2x.png; sourceTree = "<group>"; };
 		F2FA3E231EF1205E0074AB91 /* ic_autorenew_3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew_3x.png; path = ../../../../Desktop/ic_autorenew_3x.png; sourceTree = "<group>"; };
 		F2FA3E241EF1205E0074AB91 /* ic_autorenew.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = ic_autorenew.png; path = ../../../../Desktop/ic_autorenew.png; sourceTree = "<group>"; };
+		F2FA3E281EF139150074AB91 /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +67,7 @@
 				F2FA3E241EF1205E0074AB91 /* ic_autorenew.png */,
 				F2FA3E101EF118FA0074AB91 /* AppDelegate.swift */,
 				F2FA3E121EF118FA0074AB91 /* ViewController.swift */,
+				F2FA3E281EF139150074AB91 /* SecondViewController.swift */,
 				F2FA3E141EF118FA0074AB91 /* Main.storyboard */,
 				F2FA3E171EF118FA0074AB91 /* Assets.xcassets */,
 				F2FA3E191EF118FA0074AB91 /* LaunchScreen.storyboard */,
@@ -148,6 +151,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F2FA3E291EF139150074AB91 /* SecondViewController.swift in Sources */,
 				F2FA3E131EF118FA0074AB91 /* ViewController.swift in Sources */,
 				F2FA3E111EF118FA0074AB91 /* AppDelegate.swift in Sources */,
 			);

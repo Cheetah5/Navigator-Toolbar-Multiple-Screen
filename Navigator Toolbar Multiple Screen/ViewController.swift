@@ -15,12 +15,16 @@ class ViewController: UIViewController {
     @IBAction func increaseNumber(_ sender: Any) {
         showMessage(strMessage: "Click increaseNumber")
         intNumber += 1
+        intNumber = checkNumber(intNumber: intNumber)
         showNumber(intNumber: intNumber)
+        
+        
     }
     
     @IBAction func decreseNumber(_ sender: Any) {
         showMessage(strMessage: "Click decreaseNumber")
         intNumber -= 1
+        intNumber = checkNumber(intNumber: intNumber)
         showNumber(intNumber: intNumber)
         
         
@@ -29,7 +33,8 @@ class ViewController: UIViewController {
     @IBAction func resetNumber(_ sender: Any) {
         showMessage(strMessage: "Click resetNumber")
         intNumber = 1
-         showNumber(intNumber: intNumber)
+        intNumber = checkNumber(intNumber: intNumber)
+        showNumber(intNumber: intNumber)
     }
     
     @IBOutlet weak var nuberLabel: UILabel!
@@ -39,7 +44,24 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
     }//Main Method
-    //Create Function 
+    
+    
+    //Create Function
+    func checkNumber(intNumber: Int) -> Int {
+        var intResult = intNumber
+        
+        //At 11
+        if intNumber == 11 {
+            intResult = -10
+        }
+        //At -11
+        if intNumber == -11 {
+            intResult = 10
+        }
+        return intResult
+        
+    }
+    
     func showMessage(strMessage: String) -> Void {
         print("Message ==> \(strMessage)")
     }
