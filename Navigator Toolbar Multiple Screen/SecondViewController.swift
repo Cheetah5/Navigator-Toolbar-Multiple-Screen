@@ -10,6 +10,41 @@ import UIKit
 
 class SecondViewController: UIViewController {
 
+    //Explicit  
+    let strArrayNumber = ["One","Two","Three","Four","Five","Six","Seven","Eight","Nine","Ten"]
+    var intIndex = 0
+    
+    
+    @IBAction func secondNextButtom(_ sender: Any) {
+    
+        if intIndex < strArrayNumber.count {
+            intIndex += 1
+        }   else {
+            intIndex = 0
+        }
+            showLabel.text = strArrayNumber[intIndex]
+    }
+    
+    
+    @IBAction func secondBackButtom(_ sender: Any) {
+        if intIndex > 0 {
+            intIndex -= 1
+        }   else {
+            intIndex = 9
+        }
+        
+        showLabel.text = strArrayNumber[intIndex]
+    
+    }
+    
+    
+    @IBOutlet weak var showLabel: UILabel!
+    
+    
+    
+    
+    
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -18,7 +53,7 @@ class SecondViewController: UIViewController {
         print("This is SecondViewControler")
         
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
